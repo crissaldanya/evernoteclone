@@ -70,15 +70,30 @@ a{
     font-weight: bold;
 }
 
+.main-navigation a:hover {
+    color:  #00a82d;
+}
+
 .utility-navigation a {
     color: #00a82d;
 }
 
 .button-online {
 
+    display: inline-block;
+    height: 40px;
+    min-width: 120px;
+    font-size: 14px;
+    line-height: 37px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .5px;
+    color: #00a82d;
     border-radius: 3px;
     border: 2px solid #00a82d;
     padding: 0 10px;
+    transition: border .3s ease-in-out,color .3s ease-in-out;
+    -webkit-font-smoothing: antialiased;
 }
 
 
