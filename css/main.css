@@ -58,6 +58,8 @@ position: relative;
 
 }
 
+
+
 a{
     text-decoration: none;
 
@@ -79,12 +81,15 @@ a{
     padding: 0 10px;
 }
 
+
+
 .feature-background {
     color: #ffffff;
     background-color: #00a82d;
     background-image: url(../img/main-green.png);
     background-repeat: repeat;
 }
+
 
 .feature-background .container {
 
@@ -134,6 +139,14 @@ img.image {
     height: auto;
     max-width: 100%;
     width: auto;
-    display: inline-block;
-    text-align: center;
+}
+
+.feature-background .clear {
+
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 120px 0;
+    box-sizing: border-box;
 }
