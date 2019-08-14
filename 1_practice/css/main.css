@@ -2,6 +2,7 @@ body {
     background: rgb(255, 255, 255);
     font-family: 'DM Serif Text', serif;
     font-family: 'DM Serif Display', serif;
+    
 
 
 }
@@ -30,7 +31,7 @@ p {
     font-size: 16px;
     line-height: 30px;
     color: #58626d;
-    
+
 
 }
 
@@ -39,20 +40,27 @@ a{
 
 }
 
+#link { color: #fab6bc; } 
 
 .main-navigation {
-    max-width: 1000px;
+     max-width: 1000px;
     height: 100px;
     margin: 0 auto;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
     
+}
+.main-header {
+    position: fixed;
+    width: 100vw;
 }
 
 #menu {
     display: flex;
-
+    position: relative;
 
 }
 
@@ -102,6 +110,61 @@ img.hero-image {
     display: flex;
     margin: 0 auto;
     max-width: 1000px;
-    padding: 120px 0;
+    padding: 80px 0;
     box-sizing: border-box;
+}
+
+.work-1 {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1000px;
+    height: 375px;
+    background-color: #fab6bc
+}
+
+.work-background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; 
+    
+
+}
+
+.work-background .work-2,
+.work-background .work-3 {
+    padding: 0 40px 0 0;
+    width: 50%;
+
+}
+
+.work-2 {
+    width: 346px;
+    height: 459px;
+    background-color: #7daec7;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px
+    
+    
+    
+}
+
+.work-3 {
+    width: 346px;
+    height: 459px;
+    background-color: #58626d;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.work .clear {
+
+
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 80px 0;
+    box-sizing: border-box;
+
 }
