@@ -1,7 +1,107 @@
 body {
-    background: darkred
+    background: rgb(255, 255, 255);
+    font-family: 'DM Serif Text', serif;
+    font-family: 'DM Serif Display', serif;
+
+
 }
 
-* {
-    color: white
+@font-face {
+    font-family: avenirnext-bold;
+    src: url(fonts/AvenirNext-Bold.ttf);
+    font-family: avenirnext-demibold;
+    src: url(fonts/AvenirNext-DemiBold.ttf);
+    font-family: avenirnext-regular;
+    src: url(fonts/AvenirNext-Regular.ttf);
+
+
+}
+
+h1 {
+    font-family: avenirnext-bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #58626d;
+
+}
+
+p {
+    font-family: avenirnext-bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #58626d;
+    
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+.main-navigation {
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#menu {
+    display: flex;
+
+
+}
+
+
+.main-navigation a {
+    color: #1b1b1b;
+    font-weight: bold;
+}
+
+
+
+.main-navigation li {
+    margin: 30px;
+}
+
+
+
+.feature-background .container {
+    align-items: center;
+    display: flex;
+
+}
+
+.feature-background .hero-text{
+    padding: 0 40px 0 0;
+    width: 70%;
+
+}
+.feature-background .hero-image{
+    padding: 0 40px 0 0;
+    width: 30%;
+
+}
+
+
+
+
+img.hero-image {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.feature-background .clear {
+
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 120px 0;
+    box-sizing: border-box;
 }
