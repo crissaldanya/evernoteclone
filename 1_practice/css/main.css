@@ -2,9 +2,6 @@ body {
     background: rgb(255, 255, 255);
     font-family: 'DM Serif Text', serif;
     font-family: 'DM Serif Display', serif;
-    
-
-
 }
 
 @font-face {
@@ -14,8 +11,6 @@ body {
     src: url(fonts/AvenirNext-DemiBold.ttf);
     font-family: avenirnext-regular;
     src: url(fonts/AvenirNext-Regular.ttf);
-
-
 }
 
 h1 {
@@ -40,12 +35,16 @@ a {
 
 }
 
-#link { color: #fab6bc; } 
+a {
+    color: #fab6bc;
+    font-family: avenirnext-bold;
+} 
 
 .main-navigation {
-     max-width: 1000px;
-    height: 90px;
+     max-width: 100%;
+    height: 10px;
     margin: 0 auto;
+    padding: 40px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -61,7 +60,6 @@ a {
 #menu {
     display: flex;
     position: relative;
-
 }
 
 
@@ -81,6 +79,8 @@ a {
 .feature-background .container {
     align-items: center;
     display: flex;
+    max-width: 900px;
+    margin: 0 auto;
 
 }
 
@@ -95,9 +95,6 @@ a {
 
 }
 
-
-
-
 img.hero-image {
     height: auto;
     max-width: 100%;
@@ -109,61 +106,106 @@ img.hero-image {
     align-items: center;
     display: flex;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
     padding: 80px 0;
     box-sizing: border-box;
+}
+.box-grid-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 8px;
+    justify-content: center;
+    grid-template-rows: 400px;
+}
+
+.work .container {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .work-1 {
     display: flex;
     align-items: flex-end;
-    max-width: 1000px;
-    height: 375px;
-    background-color: #fab6bc
+    grid-column: 1 / span 2; 
+    /* padding: 20px 200px 0 0; */
+    /* max-width: 1000px; 
+    height: 375px;*/
+    background-color: #fab6bc;
 }
 
-.work-background {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0; 
-    
-
+.textowork-1 {
+    height: 300px;
+    margin-left: 40px;
+}
+.textowork-1 a {
+    color: #58626d; 
+}
+.textowork-1 p {
+  padding: 10px 0;  
+  width: 237px;
+  height: 58px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 21px;
+  color: #58626d;
 }
 
-.work-background .work-2,
-.work-background .work-3 {
-    padding: 0 40px 0 0;
-    width: 50%;
 
+.textowork-2 {
+    padding: 40px 10px 10px 40px;
 }
-
+.textowork-2 a {
+    color: #ffffff; 
+}
+.textowork-2 p {
+  padding: 10px 0;  
+  width: 237px;
+  height: 58px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 21px;
+  color: #ffffff;
+}
 .work-2 {
-    width: 346px;
-    height: 459px;
+  
+    grid-column: 1; 
+    grid-row: 2;
     background-color: #7daec7;
+    display: grid;
+    grid-area: span;
     display: flex;
-    align-items: flex-end;
-    margin-right: 10px
-    
-    
-    
+    flex-direction: column;
+    align-items: flex-start;
 }
-
+.textowork-3 {
+    padding: 40px 10px 10px 40px;
+}
+.textowork-3 a {
+    color: #ffffff; 
+}
+.textowork-3 p {
+  padding: 10px 0;  
+  width: 237px;
+  height: 58px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 21px;
+  color: #ffffff;
+}
 .work-3 {
-    width: 346px;
-    height: 459px;
+    grid-column: 2; 
+    grid-row: 2;
     background-color: #58626d;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-content: flex-left;
+   
+}
+.mockup-2 {
+    margin-top: auto;
+}
+.mockup-3 {
+    margin-left: 170px;
+    
 }
 
-.work .clear {
-    margin: 0 auto;
-    max-width: 1000px;
-    box-sizing: border-box;
-}
 
 .case-study {
     background-color: #dfdfdf; 
@@ -173,34 +215,54 @@ img.hero-image {
     justify-content: center;
 }
 
-.rrss {
-    background-color: #58626d; 
-    color: white;
-    height: 172px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 
-}
 
 h3 {
-
     font-size: 30px;
+    line-height: 2em;
     text-align: center;
+
     color: #58626d;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
 }
 
 h4 {
-
 font-family: Aavenirnext-regular;
-  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.4em;
   font-weight: 500;
   text-align: center;
   color: #58626d;
-  
+}
 
+.rrss {
+    background-color: #58626d; 
+    color: white;
+    /* height: 154px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rrss p{
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rrss-icon img{
+    height: 44px;
+    padding: 2px 10px 30px 10px;
+}
+
+.rrss-icon {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
 }
