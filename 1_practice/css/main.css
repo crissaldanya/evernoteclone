@@ -325,11 +325,27 @@ height: auto;
     grid-row:2; 
 }
 .work-3{
-    grid-row:3; 
+    grid-row:; 
 }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 637px) {
+ 
+    #menu {
+        font-size: 80%;
+    }
+    .main-navigation {
+   
+       padding: 10px;
+       background-color: white;
+
+    }
+
+       .main-navigation li {
+        margin: 10px;
+
+    }
+  
 
 
 }
